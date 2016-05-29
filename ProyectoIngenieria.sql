@@ -269,3 +269,17 @@ create proc elimUsuarios
 @Usuario int
 as delete from Usuarios where Usuario=@Usuario
 
+
+-----BITACORA DE ALUMNOS-----
+create table Bitscora_Alum
+(
+id_BitAl int identity primary key,
+Telefono_nuevo varchar (10),
+Telefono_viejo varchar (10),
+Correo_nuevo varchar (50),
+Correo_viejo varchar (50),
+operacion varchar(10) not null,
+usuario varchar(60) not null,
+fecha datetime not null,
+host varchar(50) not null
+)
